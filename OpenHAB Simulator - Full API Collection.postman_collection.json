@@ -1,0 +1,1857 @@
+{
+	"info": {
+		"_postman_id": "f914f0bd-c340-417e-a464-7c30ebae2b64",
+		"name": "OpenHAB Simulator - Full API Collection",
+		"description": "Complete collection to test all OpenHAB-style simulator endpoints implemented in Open_HAB_Data_Rev_3.0.0.py",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30683578"
+	},
+	"item": [
+		{
+			"name": "AQI - Temperature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/AQI_temp/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"AQI_temp",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AQI - Humidity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/AQI_humd/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"AQI_humd",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AQI - CO2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/AQI_co2/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"AQI_co2",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AQI - Battery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/AQI_battery/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"AQI_battery",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Socket - Current",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WallSocket_socket_current/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WallSocket_socket_current",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Socket - Voltage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WallSocket_socket_voltage/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WallSocket_socket_voltage",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Socket - Active Power",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WallSocket_socket_active_power/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WallSocket_socket_active_power",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Socket - Power Consumption",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WallSocket_socket_power_consumption/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WallSocket_socket_power_consumption",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Socket - Power Factor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WallSocket_socket_power_factor/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WallSocket_socket_power_factor",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Socket - Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WallSocket_socket_status/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WallSocket_socket_status",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Socket - Toggle (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_Socket/state?socket_status=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_Socket",
+						"state"
+					],
+					"query": [
+						{
+							"key": "socket_status",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Switch - Current (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Switch_current/{{room}}/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Switch_current",
+						"{{room}}",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Switch - Voltage (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Switch_voltage/{{room}}/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Switch_voltage",
+						"{{room}}",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Switch - Active Power (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Switch_active_power/{{room}}/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Switch_active_power",
+						"{{room}}",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Switch - Power Consumption (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Switch_power_consumption/{{room}}/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Switch_power_consumption",
+						"{{room}}",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Switch - Power Factor (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Switch_power_factor/{{room}}/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Switch_power_factor",
+						"{{room}}",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Switch - Switch_1 (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Switch_switch_1/{{room}}/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Switch_switch_1",
+						"{{room}}",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Switch - Switch_2 (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Switch_switch_2/{{room}}/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Switch_switch_2",
+						"{{room}}",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Wall Switch - Toggle (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_Switch/{{room}}/state?switch_1=1&switch_2=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_Switch",
+						"{{room}}",
+						"state"
+					],
+					"query": [
+						{
+							"key": "switch_1",
+							"value": "1"
+						},
+						{
+							"key": "switch_2",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Curtain - State (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Curtain_curtainstate/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Curtain_curtainstate",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Curtain - Battery (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Curtain_curtain_battery/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Curtain_curtain_battery",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Curtain - Set Position (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_Curtain/state?curtainstate=50",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_Curtain",
+						"state"
+					],
+					"query": [
+						{
+							"key": "curtainstate",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PeopleCounter - Total In (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/PeopleCounter_total_in/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"PeopleCounter_total_in",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PeopleCounter - Total Out (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/PeopleCounter_total_out/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"PeopleCounter_total_out",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PeopleCounter - Period In (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/PeopleCounter_period_in/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"PeopleCounter_period_in",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PeopleCounter - Period Out (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/PeopleCounter_period_out/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"PeopleCounter_period_out",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PeopleCounter - Battery (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/PeopleCounter_battery/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"PeopleCounter_battery",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PeopleCounter - Temperature (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/PeopleCounter_temperature/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"PeopleCounter_temperature",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Battery (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_battery/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_battery",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Timestamp (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_t/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_t",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Unlock Record (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_unlock_record/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_unlock_record",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Alarm (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_alarm/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_alarm",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Current Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_current_status/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_current_status",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Normally Open Mode (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_normally_open_mode/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_normally_open_mode",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Auto Relock (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_auto_relock/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_auto_relock",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Tamper (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_tamper/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_tamper",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Last Access Method (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_last_access_method/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_last_access_method",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Last Access User ID (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_last_access_user_id/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_last_access_user_id",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Last Access Timestamp (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/DoorLock_door_last_access_timestamp/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"DoorLock_door_last_access_timestamp",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Auto Relock (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_DoorLock/state?action=set_auto_relock&enabled=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_DoorLock",
+						"state"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "set_auto_relock"
+						},
+						{
+							"key": "enabled",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Remote Unlock (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_DoorLock/state?action=remote_control&state=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_DoorLock",
+						"state"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "remote_control"
+						},
+						{
+							"key": "state",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Remote Lock (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_DoorLock/state?action=remote_control&state=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_DoorLock",
+						"state"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "remote_control"
+						},
+						{
+							"key": "state",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Add Card (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_DoorLock/state?action=manage_card&user_id=1&card_key_hex=0102030405",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_DoorLock",
+						"state"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "manage_card"
+						},
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "card_key_hex",
+							"value": "0102030405"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Set PIN (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_DoorLock/state?action=manage_password&user_id=1&password=123456",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_DoorLock",
+						"state"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "manage_password"
+						},
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DoorLock - Access Event (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_DoorLock/state?action=access_event&access_method=password&user_id=1&timestamp=2025-12-13T12:00:00Z",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_DoorLock",
+						"state"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "access_event"
+						},
+						{
+							"key": "access_method",
+							"value": "password"
+						},
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "timestamp",
+							"value": "2025-12-13T12:00:00Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Device Type (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_device_type/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_device_type",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Breaker Address (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_breaker_address/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_breaker_address",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Breaker Type (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_breaker_type/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_breaker_type",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Switch State (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_switch_state/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_switch_state",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Remote Control Enabled (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_remote_control_enabled/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_remote_control_enabled",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Voltage A (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_voltage_A/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_voltage_A",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Current A (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_current_A/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_current_A",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Power Total (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_power_total/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_power_total",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Temperature (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/CircuitBreaker_temperature_device/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"CircuitBreaker_temperature_device",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Turn OFF (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_CircuitBreaker/state?action=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_CircuitBreaker",
+						"state"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CircuitBreaker - Turn ON (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_CircuitBreaker/state?action=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_CircuitBreaker",
+						"state"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Water Meter - Volume (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WaterMeter_volume/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WaterMeter_volume",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Water Meter - Valve State (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WaterMeter_valve_state/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WaterMeter_valve_state",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Water Meter - Battery (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WaterMeter_battery/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WaterMeter_battery",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Water Meter - Low Power (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WaterMeter_low_power/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WaterMeter_low_power",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Water Meter - Alarm (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WaterMeter_alarm/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WaterMeter_alarm",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Water Meter - Communication Error (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/WaterMeter_communication_error/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"WaterMeter_communication_error",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Water Meter - Valve Close (Connected) (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_WaterMeter/state?valve=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_WaterMeter",
+						"state"
+					],
+					"query": [
+						{
+							"key": "valve",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Water Meter - Valve Open (Cut Off) (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_WaterMeter/state?valve=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_WaterMeter",
+						"state"
+					],
+					"query": [
+						{
+							"key": "valve",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gas Meter - Volume (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/GasMeter_volume/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"GasMeter_volume",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gas Meter - Valve State (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/GasMeter_valve_state/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"GasMeter_valve_state",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gas Meter - Battery (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/GasMeter_battery/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"GasMeter_battery",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gas Meter - Low Power (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/GasMeter_low_power/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"GasMeter_low_power",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gas Meter - Alarm (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/GasMeter_alarm/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"GasMeter_alarm",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gas Meter - Valve Close (Connected) (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_GasMeter/state?valve=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_GasMeter",
+						"state"
+					],
+					"query": [
+						{
+							"key": "valve",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gas Meter - Valve Open (Cut Off) (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_GasMeter/state?valve=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_GasMeter",
+						"state"
+					],
+					"query": [
+						{
+							"key": "valve",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Temperature (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Thermostat_temperature/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Thermostat_temperature",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Humidity (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Thermostat_humidity/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Thermostat_humidity",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Setpoint (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Thermostat_setpoint_temperature/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Thermostat_setpoint_temperature",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Mode (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Thermostat_mode/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Thermostat_mode",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Fan Setting (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Thermostat_fan_setting/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Thermostat_fan_setting",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - CO2 (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Thermostat_co2/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Thermostat_co2",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Power (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Thermostat_power/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Thermostat_power",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Turn ON (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_Thermostat/state?power=on",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_Thermostat",
+						"state"
+					],
+					"query": [
+						{
+							"key": "power",
+							"value": "on"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Turn OFF (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_Thermostat/state?power=off",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_Thermostat",
+						"state"
+					],
+					"query": [
+						{
+							"key": "power",
+							"value": "off"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Set Fan (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_Thermostat/state?fan=low",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_Thermostat",
+						"state"
+					],
+					"query": [
+						{
+							"key": "fan",
+							"value": "low"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Set Mode (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_Thermostat/state?mode=heat",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_Thermostat",
+						"state"
+					],
+					"query": [
+						{
+							"key": "mode",
+							"value": "heat"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thermostat - Set Setpoint (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/{{apartment}}/items/Update_Apartment_smart_Thermostat/state?setpoint=24.5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"{{apartment}}",
+						"items",
+						"Update_Apartment_smart_Thermostat",
+						"state"
+					],
+					"query": [
+						{
+							"key": "setpoint",
+							"value": "24.5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:9010"
+		},
+		{
+			"key": "apartment",
+			"value": "studio_apartment"
+		},
+		{
+			"key": "room",
+			"value": "kitchen"
+		}
+	]
+}
